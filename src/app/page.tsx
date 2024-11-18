@@ -1,11 +1,10 @@
 "use client";
 
-// test edit
-
 import Image from "next/image";
 import { ConnectButton } from "thirdweb/react";
-import thirdwebIcon from "@public/thirdweb.svg";
+import dprojectIcon from "@public/Logo_DProject.svg";
 import { client } from "./client";
+import { inAppWallet } from "thirdweb/wallets";
 
 export default function Home() {
   return (
@@ -16,10 +15,18 @@ export default function Home() {
         <div className="flex justify-center mb-20">
           <ConnectButton
             client={client}
-            appMetadata={{
-              name: "Example App",
-              url: "https://example.com",
-            }}
+            wallets={[ inAppWallet ({
+              auth: {
+                options: [
+                  "phone",
+                ]
+              }
+            }
+            ) ]}
+            // appMetadata={{
+            //   name: "Example App",
+            //   url: "https://example.com",
+            // }}
           />
         </div>
 
@@ -33,7 +40,7 @@ function Header() {
   return (
     <header className="flex flex-col items-center mb-20 md:mb-20">
       <Image
-        src={thirdwebIcon}
+        src={dprojectIcon}
         alt=""
         className="size-[150px] md:size-[150px]"
         style={{
@@ -42,9 +49,9 @@ function Header() {
       />
 
       <h1 className="text-2xl md:text-6xl font-semibold md:font-bold tracking-tighter mb-6 text-zinc-100">
-        thirdweb SDK
+        DProject Login
         <span className="text-zinc-300 inline-block mx-1"> + </span>
-        <span className="inline-block -skew-x-6 text-blue-500"> Next.js </span>
+        <span className="inline-block -skew-x-6 text-blue-500"> Register </span>
       </h1>
 
       <p className="text-zinc-300 text-base">
