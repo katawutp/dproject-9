@@ -55,11 +55,11 @@ function Header() {
       </h1>
 
       <p className="text-zinc-300 text-base">
-        Read the{" "}
+        กรอกหมายเลข{" "}
         <code className="bg-zinc-800 text-zinc-300 px-2 rounded py-1 text-sm mx-1">
-          README.md
+          โทรศัพท์มือถือ
         </code>{" "}
-        file to get started.
+        ที่ต้องการใช้ลงทะเบียน จากนั้นรอรับรหัส OTP
       </p>
     </header>
   );
