@@ -69,19 +69,19 @@ function ThirdwebResources() {
   return (
     <div className="grid gap-4 lg:grid-cols-3 justify-center">
       <ArticleCard
-        title="thirdweb SDK Docs"
+        title="Documents"
         href="https://portal.thirdweb.com/typescript/v5"
         description="thirdweb TypeScript SDK documentation"
       />
 
       <ArticleCard
-        title="Components and Hooks"
+        title="Components"
         href="https://portal.thirdweb.com/typescript/v5/react"
         description="Learn about the thirdweb React components and hooks in thirdweb SDK"
       />
 
       <ArticleCard
-        title="thirdweb Dashboard"
+        title="Dashboard"
         href="https://thirdweb.com/dashboard"
         description="Deploy, configure, and manage your smart contracts from the dashboard."
       />
